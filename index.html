@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katty serenatas - Declare seu amor com música</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef6f6;
+        }
+
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .heart-beat {
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            25% {
+                transform: scale(1.1);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            75% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .package-card {
+            transition: all 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .champagne-icon {
+            color: #f0c14b;
+            text-shadow: 0 0 5px rgba(240, 193, 75, 0.5);
+        }
+
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-rose-900 text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="title-font text-3xl md:text-4xl font-bold">
+                        <i class="fas fa-heart text-rose-300 mr-2 heart-beat"></i>
+                        Katty serenatas
+                    </h1>
+                    <p class="text-rose-200 mt-1">Demonstrando amor atraves da musica</p>
+                </div>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="#servicos" class="hover:text-rose-300 transition">Serviços</a></li>
+                        <li><a href="#pacotes" class="hover:text-rose-300 transition">Pacotes</a></li>
+                        <li><a href="#contato" class="hover:text-rose-300 transition">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-rose-800 to-pink-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="title-font text-4xl md:text-6xl font-bold mb-6">Declare seu amor com uma serenata</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8">Surpreenda quem você ama com uma experiência musical inesquecível,
+                repleta de romance e emoção.</p>
+            <a href="#pacotes"
+                class="bg-white text-rose-800 font-bold py-3 px-8 rounded-full hover:bg-rose-100 transition duration-300 inline-block">
+                Escolha seu pacote <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-3xl text-center font-bold mb-12 text-rose-900">Nossos Serviços</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-rose-50 p-6 rounded-lg text-center">
+                    <div class="bg-rose-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-guitar text-rose-700 text-2xl"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold mb-3 text-rose-800">Serenatas de apreciação </h3>
+                    <p class="text-gray-700">Serenata executando canções românticas ao vivo, no local de sua escolha.
+                    </p>
+                </div>
+
+                <div class="bg-rose-50 p-6 rounded-lg text-center">
+                    <div class="bg-rose-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-ring text-rose-700 text-2xl"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold mb-3 text-rose-800">Pedidos de Casamento</h3>
+                    <p class="text-gray-700">Transformamos seu pedido de casamento em um momento mágico e inesquecível.
+                    </p>
+                </div>
+
+                <div class="bg-rose-50 p-6 rounded-lg text-center">
+                    <div class="bg-rose-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar-heart text-rose-700 text-2xl"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold mb-3 text-rose-800">Datas Especiais</h3>
+                    <p class="text-gray-700">Aniversários, Dia dos Namorados ou qualquer ocasião especial merece uma
+                        serenata.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="pacotes" class="py-16 bg-rose-50">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-3xl text-center font-bold mb-12 text-rose-900">Nossos Pacotes</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Package 1 -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-pink-200 py-4 text-center">
+                        <h3 class="title-font text-xl font-bold text-rose-900">Romance Básico</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-rose-800">2.500 meticais</span>
+                            <span class="block text-gray-600">por apresentação</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>1 música violão e voz)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Dedicação personalizada</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-pink-100 hover:bg-pink-200 text-rose-800 font-bold py-3 rounded transition duration-300">
+                            Solicitar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-pink-300 py-4 text-center">
+                        <h3 class="title-font text-xl font-bold text-rose-900">Encontro Romântico</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-rose-800">3.500 meticais</span>
+                            <span class="block text-gray-600">por apresentação</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>viola e voz</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>2 músicas especiais àescolha do cliente </span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Brinde</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-pink-200 hover:bg-pink-300 text-rose-800 font-bold py-3 rounded transition duration-300">
+                            Solicitar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Package 3 (with champagne) -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg transform scale-105 relative">
+                    <div class="absolute top-0 right-0 bg-rose-600 text-white px-3 py-1 text-sm font-bold rounded-bl">
+                        Mais Popular
+                    </div>
+                    <div class="bg-rose-500 py-4 text-center">
+                        <h3 class="title-font text-xl font-bold text-white">Presente inesquecível</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-rose-800"> 5000 meticais</span>
+                            <span class="block text-gray-600">por apresentação</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Viola e voz</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>2 músicas especiais</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Buquê de flores </span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Dedicação personalizada</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Brinde especial</span>
+                            </li>
+
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Fotos do momento (2 digitais)</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-rose-500 hover:bg-rose-600 text-white font-bold py-3 rounded transition duration-300">
+                            Solicitar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Package 4 (with champagne) -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-rose-700 py-4 text-center">
+                        <h3 class="title-font text-xl font-bold text-white">Declaração de Amor</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-rose-800">8.000 meticais</span>
+                            <span class="block text-gray-600">por apresentação</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Viola, voz, saxofone ou violino</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>2 músicas especiais</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Quadro de tela</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Dedicação personalizada</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Buquê premium de 24 rosas</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-wine-glass-alt champagne-icon mr-2"></i>
+                                <span class="font-semibold">Champanhe para brindar</span>
+                            </li>
+
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Fotos profissionais (2 digitais)</span>
+                            </li>
+
+                        </ul>
+                        <button
+                            class="w-full bg-rose-700 hover:bg-rose-800 text-white font-bold py-3 rounded transition duration-300">
+                            Solicitar Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-3xl text-center font-bold mb-12 text-rose-900">O que dizem nossos clientes</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-rose-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Contratei a empresa e escolhi o pacote presente inesquecível para
+                        presentear a minha namorada. Foi demais</p>
+                    <div class="flex items-center">
+                        <div class="bg-rose-200 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-rose-700"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Marcos Machava</h4>
+                            <p class="text-sm text-gray-600">Maputo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-rose-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Surpreendi meu marido no nosso aniversário de casamento com o pacote
+                        Declaração de Amor. O vídeo ficou incrível e vamos guardar para sempre essa lembrança."</p>
+                    <div class="flex items-center">
+                        <div class="bg-rose-200 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-rose-700"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mae de Isis</h4>
+                            <p class="text-sm text-gray-600">Maputo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-rose-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"O pacote Encontro Romântico foi perfeito para nosso primeiro
+                        encontro. As músicas, a rosa... tudo foi muito especial. Agora somos namorados!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-rose-200 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-rose-700"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ivan Leandro </h4>
+                            <p class="text-sm text-gray-600">Maputo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-rose-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="title-font text-3xl text-center font-bold mb-12">Entre em Contato</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="title-font text-xl font-bold mb-4">Agende sua serenata</h3>
+                        <p class="mb-6">Preencha o formulário ao lado ou entre em contato diretamente por nossos canais:
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-rose-700 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Telefone</h4>
+                                    <p>+258 85 563 8855</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-rose-700 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p>neliomontanha5@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-rose-700 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Atendemos em</h4>
+                                    <p>Toda a região metropolitana de Maputo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <a href="https://wa.me/258855638855?text=Olá,%20gostaria%20de%20agendar%20uma%20serenata"
+                                class="whatsapp-button font-bold py-3 px-6 rounded-full hover:bg-green-600 transition duration-300 inline-flex items-center">
+                                <i class="fab fa-whatsapp text-xl mr-2"></i> Agendar via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block mb-1">Seu Nome</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-2 rounded bg-rose-800 border border-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500"
+                                    required>
+                            </div>
+
+                            <div>
+                                <label for="email" class="block mb-1">Email</label>
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-2 rounded bg-rose-800 border border-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500">
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block mb-1">Telefone</label>
+                                <input type="tel" id="phone"
+                                    class="w-full px-4 py-2 rounded bg-rose-800 border border-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500"
+                                    required>
+                            </div>
+
+                            <div>
+                                <label for="package" class="block mb-1">Pacote de Interesse</label>
+                                <select id="package"
+                                    class="w-full px-4 py-2 rounded bg-rose-800 border border-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500"
+                                    required>
+                                    <option value="">Selecione um pacote</option>
+                                    <option value="romance-basico">Romance Básico</option>
+                                    <option value="encontro-romantico">Encontro Romântico</option>
+                                    <option value="noite-inesquecivel">Presente Inesquecível</option>
+                                    <option value="declaracao-amor">Declaração de Amor</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="date" class="block mb-1">Data desejada</label>
+                                <input type="date" id="date"
+                                    class="w-full px-4 py-2 rounded bg-rose-800 border border-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500"
+                                    required>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block mb-1">Mensagem</label>
+                                <textarea id="message" rows="4"
+                                    class="w-full px-4 py-2 rounded bg-rose-800 border border-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-white text-rose-800 font-bold py-3 px-6 rounded hover:bg-rose-100 transition duration-300">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="title-font text-3xl text-center font-bold mb-12 text-rose-900">Perguntas Frequentes</h2>
+
+            <div class="space-y-4">
+                <div class="border border-rose-100 rounded-lg overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-4 bg-rose-50 hover:bg-rose-100 transition flex justify-between items-center">
+                        <span class="font-semibold">Como funciona o agendamento?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p>Você pode entrar em contato conosco por telefone, email ou através do formulário no site.
+                            Após escolher o pacote e definir a data, nosso time entrará em contato para alinhar todos os
+                            detalhes da apresentação.</p>
+                    </div>
+                </div>
+
+                <div class="border border-rose-100 rounded-lg overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-4 bg-rose-50 hover:bg-rose-100 transition flex justify-between items-center">
+                        <span class="font-semibold">Posso escolher as músicas?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p>Sim! Nossa agencia têm um repertório extenso de músicas românticas e especiais para qualquer
+                            ocasiao. Você pode sugerir até 3 músicas de sua preferência (para pacotes que incluem até 5
+                            músicas) ou até 5 músicas (para pacotes com mais músicas).</p>
+                    </div>
+                </div>
+
+                <div class="border border-rose-100 rounded-lg overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-4 bg-rose-50 hover:bg-rose-100 transition flex justify-between items-center">
+                        <span class="font-semibold">O champagne é incluso em quais pacotes?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p>O champagne está incluso nos pacotes "Declaracao de amor " (1 garrafa) e "Declaração de Amor"
+                            (1 garrafa premium com taças). Caso deseje incluir champagne em outros pacotes, podemos
+                            providenciar por um adicional.</p>
+                    </div>
+                </div>
+
+                <div class="border border-rose-100 rounded-lg overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-4 bg-rose-50 hover:bg-rose-100 transition flex justify-between items-center">
+                        <span class="font-semibold">E se chover no dia da serenata?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p>Recomendamos que a serenata seja realizada em local coberto. Caso esteja programada para área
+                            externa e haja previsão de chuva, entramos em contato para realinhar o local ou reagendar
+                            sem custos adicionais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rose-950 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="title-font text-2xl font-bold mb-2">
+                        <i class="fas fa-heart text-rose-400 mr-2"></i>
+                        Katty serenatas
+                    </h3>
+                    <p class="text-rose-300">Demonstrando amor atraves da musica</p>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="#" class="text-rose-300 hover:text-white transition">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-rose-300 hover:text-white transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/258855638855" class="text-rose-300 hover:text-white transition">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-rose-800 mt-8 pt-8 text-center text-rose-400">
+                <p>&copy; 2022 Katty Serenatas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // WhatsApp integration for form
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const package = document.getElementById('package').value;
+            const date = document.getElementById('date').value;
+            const message = document.getElementById('message').value;
+
+            // Create WhatsApp message
+            let whatsappMessage = `Olá, gostaria de agendar uma serenata!%0A%0A`;
+            whatsappMessage += `*Nome:* ${name}%0A`;
+            whatsappMessage += `*Telefone:* ${phone}%0A`;
+            if (email) whatsappMessage += `*Email:* ${email}%0A`;
+            whatsappMessage += `*Pacote de interesse:* ${package}%0A`;
+            whatsappMessage += `*Data desejada:* ${date}%0A`;
+            if (message) whatsappMessage += `*Mensagem:* ${message}%0A`;
+
+            // Open WhatsApp with pre-filled message
+            window.open(`https://wa.me/258855638855?text=${whatsappMessage}`, '_blank');
+
+            // Reset form
+            this.reset();
+
+            // Show success message (optional)
+            alert('Você será redirecionado para o WhatsApp para finalizar seu agendamento!');
+        });
+
+        // Add WhatsApp button functionality to package cards
+        document.querySelectorAll('.package-card button').forEach(button => {
+            button.addEventListener('click', function () {
+                const packageTitle = this.closest('.package-card').querySelector('h3').textContent;
+                const packagePrice = this.closest('.package-card').querySelector('span.text-4xl').textContent;
+
+                const whatsappMessage = `Olá, gostaria de agendar o pacote ${packageTitle} (${packagePrice})! Por favor, me informe as próximas disponibilidades.`;
+
+                window.open(`https://wa.me/258855638855?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+            });
+        });
+    </script>
+</body>
+
+</html>
